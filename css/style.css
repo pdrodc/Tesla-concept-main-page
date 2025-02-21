@@ -3,9 +3,21 @@
     padding: 0;
     box-sizing: border-box;
 }
+
+@font-face {
+    font-family: 'tesla';
+    src: url(/assets/fonts/Gotham-Book.otf);
+}
+
+@font-face {
+    font-family: 'tesla-medium';
+    src: url(/assets/fonts/Gotham-Medium.otf);
+}
+
+
 body{
     background-color: #afafaf;
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: 'tesla', sans-serif;
     height: auto;
     min-height: 100vh;
 }
@@ -13,7 +25,6 @@ body{
 header{
     height: 0;
     background-color: transparent;
-    z-index: 2;
 }
 
 .wrapper-header{
@@ -34,7 +45,6 @@ nav{
     gap: 2rem;
     font-size: 14px;
     font-weight: bold;
-    padding-right: 1.5rem;
 }
 .header-links a{
     text-decoration: none;
@@ -62,4 +72,69 @@ section{
     height: 100vh;
     background-size: cover;
     background-position: center;
+}
+
+section .content{
+    width: 100%;
+    height: 100vh;
+    padding-top: 16vh;
+    padding-bottom: 15vh;
+    text-align: center;
+    color: #fff;
+}
+
+section h1{
+    font-family: 'tesla-medium';
+    font-size: 4rem;
+    color: #fff;
+    padding-bottom: 0.3rem;
+}
+
+section a{
+    color: #fff;
+    text-underline-offset: 13px;
+    text-decoration-thickness: 1px;
+}
+
+section h2{
+    font-size: 2.3rem;
+    color: #fff;
+    padding-bottom: 1rem;
+}
+
+section p{
+    font-size: 1.1rem;
+    font-family: 'tesla-medium';
+    padding-bottom: 2rem;
+}
+
+section .btns{
+    gap: 2rem;
+}
+
+section button{
+    font-family: 'tesla-medium';
+    border-radius: 5px;
+    border: none;
+    width: 252px;
+    height: 40px;
+    font-size: 13px;
+    color: #3f3f3f;
+    margin-right: 1rem;
+    background: #f4f4f4;
+    cursor: pointer;
+    transition: .4s ease;
+}
+
+section button:hover{
+    background: #ececec;
+}
+
+section #order{
+    background: #3e6ae1;
+    color: #fff;
+}
+
+section #order:hover{
+    background: #3155b6;
 }
