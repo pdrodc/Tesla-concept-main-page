@@ -1,0 +1,199 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+@font-face {
+    font-family: 'tesla';
+    src: url(/assets/fonts/Gotham-Book.otf);
+}
+
+@font-face {
+    font-family: 'tesla-medium';
+    src: url(/assets/fonts/Gotham-Medium.otf);
+}
+
+@font-face {
+    font-family: 'tesla-light';
+    src: url(/assets/fonts/Gotham-Light.otf);
+}
+
+body{
+    background-color: black;
+    font-family: 'tesla', sans-serif;
+    height: auto;
+    min-height: 100vh;
+    overflow-x: hidden;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+header{
+    display: grid;
+    grid-template-columns: auto 1fr auto;
+    padding: 25px 40px;
+}
+
+a.logo{
+    height: 12px;
+    width: 120px;
+}
+
+header a{
+    color: #fff;
+}
+
+header nav a{
+    text-decoration: none;
+    font-size: 13px;
+    padding: 5px 10px;
+}
+
+header nav.center{
+    text-align: center;
+}
+
+header nav.desktop{
+    color: #fff;
+}
+
+header nav i{
+    margin-right: 1rem;
+}
+
+section{
+    height: 100vh;
+    background-size: cover;
+    background-position: center;
+}
+
+section .content{
+    width: 100%;
+    height: 100vh;
+    padding-top: 16vh;
+    padding-bottom: 15vh;
+    text-align: center;
+    color: #fff;
+}
+
+section h1{
+    font-family: 'tesla-medium';
+    font-size: 4rem;
+    color: #fff;
+    padding-bottom: 0.3rem;
+}
+
+section a{
+    color: #fff;
+    text-underline-offset: 13px;
+    text-decoration-thickness: 1px;
+}
+
+section h2{
+    font-size: 2.3rem;
+    color: #fff;
+    padding-bottom: 1rem;
+}
+
+section p{
+    font-size: 1.1rem;
+    font-family: 'tesla-medium';
+    padding-bottom: 2rem;
+}
+
+section .btns{
+    gap: 2rem;
+}
+
+
+section button{
+    font-family: 'tesla-medium';
+    border-radius: 5px;
+    border: none;
+    width: 252px;
+    height: 40px;
+    margin-bottom: 10px;
+    font-size: 13px;
+    color: #3f3f3f;
+    margin-right: 1rem;
+    background: #f4f4f4;
+    cursor: pointer;
+    transition: .4s ease;
+}
+
+section button:hover{
+    background: #ececec;
+}
+
+section #order{
+    background: #3e6ae1;
+    color: #fff;
+}
+
+section #order:hover{
+    background: #3155b6;
+}
+
+.divisor{
+    position: relative;
+    top: 5%;
+    right: 22%;
+    width: 134px;
+    height: 0.01rem;
+    background-color: rgb(177, 177, 177);
+}
+
+
+.last-infos {
+    height: 30vh;
+    text-align: center; /* Centraliza o texto */
+    margin: 0 auto;    /* Centraliza a seção no meio da página */
+}
+
+.last-infos .text p {
+    font-family: 'tesla-light';
+    color: #3a3a3a;
+    font-size: 11.5px;
+    line-height: 1.2rem;
+    margin: 0; /* Remove margens padrão, se necessário */
+}
+
+.last-infos .text{
+    max-width: 630px; /* Largura máxima do texto */
+    margin: 0 auto; /* Centraliza o container na página */
+    padding: 20px; /* Espaçamento interno */
+    text-align: center;
+    padding-top: 3rem; /* Opcional: centraliza o texto dentro do container */
+}
+
+.last-infos .text a{
+    color: #000000;
+    text-underline-offset: 3px;
+}
+
+.footer-tesla{
+    text-align: center;
+    margin: 0 auto;
+}
+
+.footer-tesla .footer-texts{
+    display: flex;
+    justify-content: center;
+    max-width: 630px; /* Largura máxima do texto */
+    margin: 0 auto; /* Centraliza o container na página */
+    text-align: center;
+    padding: 0px 8px;
+    gap: 1rem;
+    margin-top: 4rem;
+    padding-bottom: 3rem;
+}
+
+.footer-texts a{
+    font-family: 'tesla-medium';
+    color: #5c5e62;
+    font-size: 11px;
+    text-decoration: none;
+}

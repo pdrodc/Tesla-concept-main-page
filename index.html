@@ -5,32 +5,42 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Electric Cars, Solar & Clean Energy</title>
     <link href="./css/style.css" rel="stylesheet">
-    <link href="https://upload.wikimedia.org/wikipedia/commons/thumb/b/bd/Tesla_Motors.svg/793px-Tesla_Motors.svg.png" rel="shortcut icon">
+    <link href="https://www.tesla.com/themes/custom/tesla_frontend/assets/favicons/favicon.ico" rel="icon">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
 </head>
 <body>
-    <header class="header">
-        <div class="wrapper-header">
+    <header>
             
-            <nav class="header">
-                <div class="logo">
-                    <a href="tesla.com"><img src="https://logospng.org/download/tesla/logo-tesla-1024.png" alt="" height="120px"></a>
-                </div>
-                <div class="header-links">
-                    <a href="#">Vehicles</a>
-                    <a href="#">Energy</a>
-                    <a href="#">Charging</a>
-                    <a href="#">Discover</a>
-                    <a href="#">Shop</a>
-                </div>
-                <div class="header-icons">
-                    <i class="fa-regular fa-circle-question"></i>
-                    <i class="fa-solid fa-globe"></i>
-                    <i class="fa-regular fa-user"></i>
-                </div>
+            <a href="" class="logo">
+                <svg class="tds-icon tds-icon-logo-wordmark tds-site-logo-icon" viewBox="0 0 342 35" xmlns="http://www.w3.org/2000/svg"><path fill="currentColor" d="M0 .1a9.7 9.7 0 0 0 7 7h11l.5.1v27.6h6.8V7.3L26 7h11a9.8 9.8 0 0 0 7-7H0zm238.6 0h-6.8v34.8H263a9.7 9.7 0 0 0 6-6.8h-30.3V0zm-52.3 6.8c3.6-1 6.6-3.8 7.4-6.9l-38.1.1v20.6h31.1v7.2h-24.4a13.6 13.6 0 0 0-8.7 7h39.9v-21h-31.2v-7zm116.2 28h6.7v-14h24.6v14h6.7v-21h-38zM85.3 7h26a9.6 9.6 0 0 0 7.1-7H78.3a9.6 9.6 0 0 0 7 7m0 13.8h26a9.6 9.6 0 0 0 7.1-7H78.3a9.6 9.6 0 0 0 7 7m0 14.1h26a9.6 9.6 0 0 0 7.1-7H78.3a9.6 9.6 0 0 0 7 7M308.5 7h26a9.6 9.6 0 0 0 7-7h-40a9.6 9.6 0 0 0 7 7"></path></svg>
+            </a>
+
+            <nav class="center">
+                <a href="">Vehicles</a>
+                <a href="">Energy</a>
+                <a href="">Charging</a>
+                <a href="">Discovery</a>
+                <a href="">Shop</a>
             </nav>
-        </div>
+
+            <nav class="desktop">
+                <i class="fa-regular fa-circle-question"></i>
+                <i class="fa-solid fa-globe"></i>
+                <i class="fa-regular fa-user"></i>
+                <a id="menu" href="#">Menu</a>
+            </nav>
     </header> 
+    <aside>
+        <button class="close">&times;</button>
+        <a href="">Vehicles</a>
+        <a href="">Energy</a>
+        <a href="">Charging</a>
+        <a href="">Discover</a>
+        <a href="">Shop</a>
+        <a href="">Support</a>
+        <a href=""><i class="fa-solid fa-globe"></i>United States</a>
+        <a href=""><i class="fa-solid fa-circle-user"></i>Account</a>
+    </aside>
     <section style="background-image: url('./assets/img/Homepage-Model-Y-Desktop-NA-v3.jpg');">
         <div class="content">
             <h1>Model Y</h1>
@@ -60,7 +70,7 @@
             <h2><a href='#' style="font-size: 1.8rem; font-family: 'tesla-medium';">$249/mo Lease Ending March 3</a></h2>
             <p style="font-size: 1rem;">From $29,9902 After Est. Savings</p>
 
-            <div class="btns" style="padding-top: 60vh;">
+            <div class="btns" style="padding-top: 58vh;">
                 <button id="order">Order Now</button>
                 <button>Learn More</button>
             </div>
@@ -73,7 +83,7 @@
             <p><a href='#' style="font-size: 1.05rem; font-family: 'tesla-medium'; text-underline-offset: 5px;">$749/MO LEASING</a></p>
             
 
-            <div class="btns" style="padding-top: 57vh;">
+            <div class="btns" id="cyber-btn" style="padding-top: 57vh;">
                 <button style="height: 45px; color: #d6d6d6; border-radius: 0; background-color: black; opacity: .75; " id="order">ORDER NOW</button>
                 <button style="height: 45px; color: #d6d6d6; border-radius: 0; background-color: black; opacity: .75">LEARN MORE</button>
             </div>
@@ -86,7 +96,7 @@
             <p><a href='#' style="font-size: 1.05rem; font-family: 'tesla-medium'; text-underline-offset: 5px;">$1,149/mo Leasing</a></p>
             
 
-            <div class="btns" style="padding-top: 63vh;">
+            <div class="btns" style="padding-top: 60vh;">
                 <button id="order">Order Now</button>
                 <button>Learn More</button>
             </div>
@@ -99,17 +109,66 @@
             <p><a href='#' style="font-size: 1.05rem; font-family: 'tesla-medium'; text-underline-offset: 5px;">$998/mo Leasing</a></p>
             
 
-            <div class="btns" style="padding-top: 63vh;">
+            <div class="btns" id="cyber-btn" style="padding-top: 60vh;">
                 <button id="order">Order Now</button>
                 <button>Learn More</button>
             </div>
         </div>
     </section>
-    <section style="background-image: url('./assets/img/Homepage-SolarPanels-01-Desktop.png');"></section>
-    <section style="background-image: url('./assets/img/Homepage-SolarRoof-Desktop-US.png');"></section>
-    <section style="background-image: url('./assets/img/Homepage-Powerwall-Desktop-US.png');"></section>
-    <section style="background-image: url('./assets/img/Homepage-Accessories-Desktop-US.png');"></section>
+    <section style="background-image: url('./assets/img/Homepage-SolarPanels-01-Desktop.png');">
+        <div class="content" style="padding-top: 14vh; display: grid; grid-template-rows: min-content auto;">
+            <h1 style="font-size: 3rem;">Solar Panels</h1>
+            <p><a href='#' id="shedule" style="font-size: 1.8rem; font-family: 'tesla-medium'; text-underline-offset: 5px;">Schedule a Virtual Consultation</a></p>
+
+            <div class="btns" style="padding-top: 60vh;">
+                <button id="order">Order Now</button>
+                <button>Learn More</button>
+            </div>
+        </div>
+    </section>
+    <section style="background-image: url('./assets/img/Homepage-SolarRoof-Desktop-US.png');">
+        <div class="content" style="padding-top: 12vh; display: grid; grid-template-rows: min-content auto;">
+            <h1 style="font-size: 3.3rem;">Solar Roof</h1>
+            <p style="font-size: 1.7rem; padding: 0; padding-bottom: 0.5rem;">Produce Clean Energy From Your Roof</p>
+            
+
+            <div class="btns" id="cyber-btn" style="padding-top: 61vh;">
+                <button id="order">Order Now</button>
+                <button>Learn More</button>
+            </div>
+        </div>
+    </section>
+    <section style="background-image: url('./assets/img/Homepage-Powerwall-Desktop-US.png');">
+        <div class="content" style="padding-top: 12vh; display: grid; grid-template-rows: min-content auto;">
+            <h1 style="font-size: 3.3rem; font-family: 'tesla';">Powerwall</h1>
+
+            <div class="btns" id="cyber-btn" style="padding-top: 68vh;">
+                <button id="order">Order Now</button>
+                <button>Learn More</button>
+            </div>
+        </div>
+    </section>
+    <section style="background-image: url('./assets/img/Homepage-Accessories-Desktop-US.png');">
+        <div class="content" style="padding-top: 12vh; display: grid; grid-template-rows: min-content auto;">
+            <h1 style="font-size: 3.3rem;">Accessories</h1>
+
+            <div class="btns" id="cyber-btn" style="padding-top: 70vh;">
+                <button id="order">Shop Now</button>
+            </div>
+        </div>
+    </section>
     <section style="position: relative; overflow: hidden;">
+        
+        <div class="infos">
+            <div class="content" style="padding-left: 3rem; padding-top: 20vh; display: flex; justify-content: center; align-items: flex-start; flex-direction: column;">
+                <h1 style="font-size: 2.4rem; font-family: 'tesla'; padding-bottom: 1rem;">We Are Tesla</h1>
+    
+                <div class="btns" style="padding-left: 1rem;" id="cyber-btn">
+                    <button style="width: 200px;">Join Tesla</button>
+                </div>
+            </div>
+        </div>
+        
         <div class="VideoBackground">
             <video autoplay loop muted playsinline style="
                 position: absolute;
@@ -126,6 +185,31 @@
         </div>
     </section>
 
-    <footer></footer>
+    <section class="last-infos">
+        <div class="text">
+            <p>1 Price before estimated savings is $46,630, including Destination and Order Fees, but excluding taxes and other fees. Subject to change. Vehicle shown has upgrades that will increase the price. Estimated savings includes $6,500 in <a href="#">gas savings</a> estimated over five years, the $7,500 Federal Tax Credit and state incentives, available to eligible buyers and subject to MSRP caps. Not all vehicles, customers or finance options will be eligible. <a href="#">Terms apply</a>.</p>
+
+            <p>2 Price before estimated savings is $44,130, including Destination and Order Fees, but excluding taxes and other fees. Subject to change. Vehicle shown has upgrades that will increase the price. Estimated savings includes $6,500 in <a href="#">gas savings</a> estimated over five years, the $7,500 Federal Tax Credit and state incentives, available to eligible buyers and subject to MSRP caps. Not all vehicles, customers or finance options will be eligible. <a href="#">Terms apply</a>.</p>
+
+        </div>
+
+    </section>
+
+    <footer class="footer-tesla">
+        <div class="footer-texts">
+            <a href="#">Tesla © 2025</a>
+            <a href="#">Privacy & Legal</a>
+            <a href="#">Vehicle Recalls</a>
+            <a href="#">Contact</a>
+            <a href="#">News</a>
+            <a href="#">Get Updates</a>
+            <a href="#">Locations</a>
+        </div>
+    </footer>
+
+
+    <script src="/assets/scripts/mobile-menu.js" defer></script>
+    <script src="/assets/scripts/header-effect.js" defer></script>
+    <script src="/assets/scripts/scroll.js" defer></script>
 </body>
 </html>
